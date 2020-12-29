@@ -1735,8 +1735,17 @@ body.offcanvas .gorman-nav-toggle {
     grid-gap: 5px;
 }
 
+.degreeCert {
+    height: 300px;
+}
+
 @media(max-width: 576px) {
     .technology_grid {
         grid-template-columns: 1fr 1fr ;
     }
+    .degreeCert {
+        height: 245px;
+    }
 }
+
+
