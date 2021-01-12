@@ -1713,7 +1713,7 @@ body.offcanvas .gorman-nav-toggle {
 
 @media(max-width: 576px) {
     .technology_grid {
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr ;
     }
     .degreeCert {
         height: 245px;
