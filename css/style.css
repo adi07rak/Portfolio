@@ -1711,6 +1711,13 @@ body.offcanvas .gorman-nav-toggle {
     height: 300px;
 }
 
+.icon-box {
+    /* height: 119px;
+    width: 119px; */
+    max-width: 100%;
+    height: auto;
+}
+
 @media(max-width: 576px) {
     .technology_grid {
         grid-template-columns: 1fr ;
