@@ -246,7 +246,6 @@ select {
     border-bottom: 2px solid #272727;
 }
 
-
 /* ======= Scrollbar ======= */
 ::-webkit-scrollbar {
     width: 0px;
@@ -875,9 +874,10 @@ body.offcanvas .gorman-nav-toggle {
     margin-bottom: 30px;
     position: relative;
     text-align: center;
-    padding: 45px 30px;
+    padding: 20px 30px;
     border: 1px solid rgba(0,0,0,.04);
     background: #fff;
+    transition: 0.3s all ease-in;
 }
 .gorman-services .gorman-icon {
     font-size: 36px;
@@ -895,7 +895,7 @@ body.offcanvas .gorman-nav-toggle {
 }
 .gorman-services .gorman-text h3 {
     font-weight: 400;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     /* color: #272727; */
     font-size: 21px;
 }
@@ -1121,7 +1121,6 @@ body.offcanvas .gorman-nav-toggle {
     font-size: 16px;
   }
 }
-
 
 
 /* ======= Blog style ======= */
@@ -1630,39 +1629,39 @@ body.offcanvas .gorman-nav-toggle {
     /* color: white;
     font-weight: lighter; */
 }
-.main_technologies_section .row .gorman-services:nth-child(odd) 
+/* .main_technologies_section .row .gorman-services:nth-child(odd) 
 {
     background-color: #171717;
     cursor: pointer;
     transition: 0.3s all ease-in;
-}
+} */
 
 .main_technologies_section .row .gorman-services
 {
     margin-bottom: 0px;
 }
-.main_technologies_section .row .gorman-services:nth-child(odd) h3
+/* .main_technologies_section .row .gorman-services:nth-child(odd) h3
 {
     color: white;
-}
-.main_technologies_section .row .gorman-services:nth-child(odd):hover
+} */
+/* .main_technologies_section .row .gorman-services:nth-child(odd):hover
 {
    background-color: white;
    transform: scale(0.90);
-}
-.main_technologies_section .row .gorman-services:nth-child(odd):hover h3
+} */
+/* .main_technologies_section .row .gorman-services:nth-child(odd):hover h3
 {
     color: #171717;
-}
+} */
 
-.main_technologies_section .row .gorman-services:nth-child(even):hover
+.main_technologies_section .row .gorman-services:hover
 {
     background-color: #171717;
     cursor: pointer;
     transition: 0.3s all ease-in;
     transform: scale(0.90);
 }
-.main_technologies_section .row .gorman-services:nth-child(even):hover h3
+.main_technologies_section .row .gorman-services:hover h3
 {
     color: white;
 }
@@ -1703,21 +1702,33 @@ body.offcanvas .gorman-nav-toggle {
 
 .technology_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .degreeCert {
     height: 300px;
 }
 
-@media(max-width: 576px) {
+.icon-box {
+    max-width: 100%;
+    height: auto;
+}
+
+@media(max-width: 1195px) {
     .technology_grid {
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .degreeCert {
         height: 245px;
     }
 }
 
+@media(max-width: 576px) {
+    .technology_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .degreeCert {
+        height: 245px;
+    }
+}
 
