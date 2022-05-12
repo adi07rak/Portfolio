@@ -1743,4 +1743,5 @@ body.offcanvas .gorman-nav-toggle {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 8px;
 }
